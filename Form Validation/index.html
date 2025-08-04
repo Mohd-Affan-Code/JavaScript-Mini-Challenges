@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="formContainer">
+        <h2 class="form-heading">REGISTRATION FORM</h2>
+        <form action="/">
+          <div class="name-input">
+            <input type="text" placeholder="Username" />
+            <div class="name-error"></div>
+          </div>
+          <div class="phone-input">
+            <input type="text" placeholder="Phone Number" />
+            <div class="phone-error"></div>
+          </div>
+          <div class="mail-input">
+            <input type="text" placeholder="Mail" />
+            <div class="mail-error"></div>
+          </div>
+          <div class="password-input">
+            <input type="password" placeholder="Password" />
+            <div class="password-error"></div>
+          </div>
+          <div class="confirmPassword-input">
+            <input type="password" placeholder="Confirm Password" />
+            <div class="confirmPassword-error"></div>
+          </div>
+          <div class="submit-container">
+            <button class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
