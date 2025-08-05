@@ -13,23 +13,29 @@
         <h2 class="form-heading">REGISTRATION FORM</h2>
         <form action="/">
           <div class="name-input">
-            <input type="text" placeholder="Username" />
+            <input
+              type="text"
+              id="userName"
+              name="username"
+              placeholder="Username"
+              required
+            />
             <div class="name-error"></div>
           </div>
           <div class="phone-input">
-            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Phone Number" required />
             <div class="phone-error"></div>
           </div>
           <div class="mail-input">
-            <input type="text" placeholder="Mail" />
+            <input type="text" placeholder="Mail" required />
             <div class="mail-error"></div>
           </div>
           <div class="password-input">
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" required />
             <div class="password-error"></div>
           </div>
           <div class="confirmPassword-input">
-            <input type="password" placeholder="Confirm Password" />
+            <input type="password" placeholder="Confirm Password" required />
             <div class="confirmPassword-error"></div>
           </div>
           <div class="submit-container">
