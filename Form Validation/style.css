@@ -59,7 +59,7 @@ form input:focus {
   color: red;
   margin-top: -5px;
   margin-bottom: 5px;
-  display: none; /* Hide by default */
+  /* display: none; */
 }
 
 /* Submit Button */
