@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #ff6a6a, #ffb3b3);
+}
+
+.secondContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 600px;
+  border-radius: 14px;
+  border: 8px solid white;
+  background-image: url("sbgImage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mainContainer {
+  border-radius: 14px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
