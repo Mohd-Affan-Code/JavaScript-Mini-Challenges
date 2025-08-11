@@ -1,0 +1,70 @@
+/* https://restcountries.com/v3.1/all?fields=name,capital,population,region,subregion,languages,currencies,flags,cca2,timezones */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Nunito, sans-serif;
+}
+
+.header-container {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding-inline: 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.title {
+  font-weight: 800;
+}
+
+main {
+  padding: 24px;
+}
+
+.countries-container {
+  margin-inline: auto;
+  max-width: 1200px;
+  margin-top: 16px;
+}
+
+.country-card {
+  display: inline-block;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 24px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.country-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+  width: 100%;
+}
+
+.card-text {
+  padding-inline: 16px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-block: 16px;
+}
