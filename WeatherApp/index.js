@@ -1,4 +1,4 @@
-let apiKey = "b592550cf9f6b675e513ed4f45558174";
+// let apiKey = "b592550cf9f6b675e513ed4f45558174";
 
 const btn = document.querySelector(".search-button");
 const searchBox = document.getElementById("search-input");
