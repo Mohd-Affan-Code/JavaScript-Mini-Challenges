@@ -1,0 +1,110 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 370px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #fff;
+}
+
+/* Input box */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #343333;
+  padding: 8px;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.search-button img {
+  width: 20px;
+}
+
+/* Weather info */
+.weather-condition .wea-con-img img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.weather-digree {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Humidity & Wind */
+.left-box,
+.right-box {
+  display: inline-block;
+  width: 45%;
+  margin-top: 15px;
+}
+
+.humidity,
+.wind-speed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.humidity img,
+.wind-speed img {
+  width: 30px;
+}
+
+.humidity-text p,
+.wind-text p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.humidity-title,
+.wind-title {
+  font-size: 14px;
+  color: #878688;
+}
