@@ -77,3 +77,5 @@ const quizData = [
     answer: "function myFunc() {}",
   },
 ];
+
+export default quizData;
