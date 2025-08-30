@@ -92,6 +92,10 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6; /* thoda greyed-out look ke liye */
+}
 
 button:hover {
   background: #45a049;
