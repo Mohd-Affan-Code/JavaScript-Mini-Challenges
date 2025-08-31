@@ -4,6 +4,9 @@ const question = document.querySelector(".question");
 const options = document.querySelector(".option");
 const nextbtn = document.querySelector(".next-btn");
 const quesNum = document.querySelector(".ques-num");
+const complete = document.querySelector(".complete");
+const quizBody = document.querySelector(".quiz-body");
+const scoreButton = document.querySelector(".scorebutton");
 
 let currentQuestion = 0;
 let questionNumber = 1;
@@ -29,17 +32,24 @@ function questionLoad() {
 function selectAnswere(button, selected, answere) {
   const allOptions = document.querySelectorAll(".option-item");
 
-  allOptions.forEach((opt) => {
-    opt.style.pointerEvents = "none"; // disables click
-    opt.style.cursor = "default"; // cursor normal ho jaye
-  });
   // console.log(selected);
   if (selected === answere) {
     button.style.backgroundColor = "green";
+    ++score;
     console.log("correct");
   } else {
+    button.style.backgroundColor = "red";
     console.log("false");
   }
+
+  allOptions.forEach((opt) => {
+    opt.style.pointerEvents = "none"; // disables click
+    opt.style.cursor = "default"; // cursor normal ho jaye
+
+    if (opt.innerText === answere) {
+      opt.style.backgroundColor = "green";
+    }
+  });
 }
 
 nextbtn.addEventListener("click", () => {
@@ -49,6 +59,9 @@ nextbtn.addEventListener("click", () => {
     quesNum.innerText = questionNumber += 1;
   } else {
     nextbtn.disabled = true;
+    complete.style.display = "block";
+    quizBody.style.display = "none";
+    scoreButton.innerHTML = `<h2>Your Score: ${score}/${quizData.length}</h2>`;
   }
 });
 

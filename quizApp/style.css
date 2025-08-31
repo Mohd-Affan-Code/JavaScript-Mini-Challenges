@@ -100,3 +100,7 @@ button:disabled {
 button:hover {
   background: #45a049;
 }
+
+.complete {
+  padding: 24px;
+}
