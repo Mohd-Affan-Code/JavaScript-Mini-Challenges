@@ -90,124 +90,126 @@ body {
   font-size: 0.9rem;
 }
 
-/*
-
 .detail-container {
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .right {
-    flex: 1;
-    min-width: 300px;
-    padding: 30px;
-    background: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .poster img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .runtime {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .left {
-    flex: 2;
-    min-width: 300px;
-    padding: 30px;
+  flex: 2;
+  min-width: 300px;
+  padding: 30px;
 }
 
 .movie-name {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .movie-name p {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #1a2a6c;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a2a6c;
 }
 
 .movie-dates {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .movie-dates p {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
-.genre, .writer, .actors, .plot, .language {
-    margin-bottom: 15px;
-    line-height: 1.6;
+.genre,
+.writer,
+.actors,
+.plot,
+.language {
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 .plot {
-    text-align: justify;
+  text-align: justify;
 }
 
 b {
-    color: #1a2a6c;
+  color: #1a2a6c;
 }
 
-Responsive styles
+/* Responsive styles */
 @media (max-width: 768px) {
-    .heading h1 {
-        font-size: 2.2rem;
-    }
-    
-    .detail-container {
-        flex-direction: column;
-    }
-    
-    .right, .left {
-        width: 100%;
-    }
-    
-    .movie-dates {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .right,
+  .left {
+    width: 100%;
+  }
+
+  .movie-dates {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    
-    .container {
-        padding: 10px;
-    }
-    
-    .heading h1 {
-        font-size: 1.8rem;
-    }
-    
-    .search-box input {
-        padding: 12px 15px;
-    }
-    
-    .right, .left {
-        padding: 20px;
-    }
-    
-    .movie-name p {
-        font-size: 1.8rem;
-    }
-}
+  body {
+    padding: 10px;
+  }
 
-*/
+  .container {
+    padding: 10px;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .search-box input {
+    padding: 12px 15px;
+  }
+
+  .right,
+  .left {
+    padding: 20px;
+  }
+
+  .movie-name p {
+    font-size: 1.8rem;
+  }
+}
