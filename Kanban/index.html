@@ -2,20 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>copy it</h1>
-    <script>
-      document.addEventListener("copy", (e) => {
-        console.log(e);
-        e.clipboardData.setData(
-          "image/png",
-          "https://in.images.search.yahoo.com/search/images?p=imag&fr=mcafee&type=E210IN714G0&imgurl=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffile%2Fimage-background-02pncybdeif1jvym.jpg#id=13&iurl=http%3A%2F%2Fwww.hdwallpaperspulse.com%2Fwp-content%2Fuploads%2F2017%2F12%2F23%2Fbeautiful-hd-widescreen-image.jpg&action=click"
-        );
-        e.preventDefault();
-      });
-    </script>
+    <h1>Kanban Board</h1>
+    <div class="board">
+      <div class="column" id="todo">
+        <h2>Todo</h2>
+        <div class="cards">
+          <p class="card">ye ahuan nass</p>
+        </div>
+        <button class="add">+ Add</button>
+      </div>
+      <div class="column" id="progress">
+        <h2>In Progress</h2>
+        <div class="cards"></div>
+        <button class="add">+ Add</button>
+      </div>
+      <div class="column" id="done">
+        <h2>Done</h2>
+        <div class="cards"></div>
+        <button class="add">+ Add</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
