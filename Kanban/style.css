@@ -40,6 +40,10 @@ h1 {
   flex-direction: column;
 }
 
+.drag-over {
+  background: red;
+}
+
 .column h2 {
   text-align: center;
   margin-bottom: 15px;
